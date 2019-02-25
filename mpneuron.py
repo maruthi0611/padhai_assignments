@@ -1,13 +1,9 @@
-
-# coding: utf-8
-
-# In[2]:
-
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
+#Class for MP Neuron
 class MPNeuron:
   
     def __init__(self):
@@ -77,4 +73,3 @@ finaldf = pd.concat([testdf[['PhoneId']], pd.DataFrame(Y1_pred.astype('int'))], 
 finaldf.columns = ['PhoneId','Class']
 
 finaldf.to_csv("C:\\Users\\mkanukolanu\\Downloads\\padhai-module1-assignment\\mysubmission3.csv",index=False)
-
